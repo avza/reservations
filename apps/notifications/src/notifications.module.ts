@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import { LoggerModule } from '@app/common';
+import { HealthModule, LoggerModule } from '@app/common';
 import { ConfigModule } from '@nestjs/config';
 import * as Joi from 'joi';
 import { NotificationsController } from './notifications.controller';
@@ -18,6 +18,7 @@ import { NotificationsService } from './notifications.service';
         GOOGLE_OAUTH_REFRESH_TOKEN: Joi.string().required(),
       }),
     }),
+    HealthModule,
   ],
   controllers: [NotificationsController],
   providers: [NotificationsService],
