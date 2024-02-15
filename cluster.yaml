@@ -5,6 +5,8 @@ metadata:
   name: reservations
   region: us-east-1
 
+availabilityZones: ['us-east-1a', 'us-east-1b']
+
 nodeGroups:
   - name: ng-1
     instanceType: t2.micro
