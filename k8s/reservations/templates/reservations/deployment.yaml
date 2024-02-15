@@ -15,7 +15,7 @@ spec:
         app: reservations
     spec:
       containers:
-        - image: my-image
+        - image: 654654173989.dkr.ecr.us-east-1.amazonaws.com/reservations:latest
           name: reservations
           env:
             - name: PORT
